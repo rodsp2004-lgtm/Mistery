@@ -1,0 +1,50 @@
+<header #header [class.Hretraido]="!expansion()">
+  <nav [class.retraido]="!expansion()">
+    <h1 #titulo>Mistery</h1>
+    <ul>
+      <li>
+        <a routerLink="/inicio"
+          ><img class="size-icons" src="/img/header/casa.png" alt="" />
+          @if (mostrarTexto()) {
+            <span (transitionend)="eliminarTexto($event)">Inicio</span>
+          }
+        </a>
+      </li>
+      <li>
+        <a routerLink="/productos"
+          ><img class="size-icons" src="/img/header/productos.png" alt="" />
+          @if (mostrarTexto()) {
+            <span (transitionend)="eliminarTexto($event)">Productos</span>
+          }
+        </a>
+      </li>
+      <li>
+        <a routerLink="/inventario"
+          ><img #imageIN class="size-icons" src="/img/header/inventario.png" alt="" />
+          @if (mostrarTexto()) {
+            <span (transitionend)="eliminarTexto($event)">Inventario</span>
+          }
+        </a>
+      </li>
+      <li>
+        <a routerLink="/movimientos"
+          ><img class="size-icons" src="/img/header/movimientos.png" alt="" />
+          @if (mostrarTexto()) {
+            <span (transitionend)="eliminarTexto($event)"> Movimientos </span>
+          }
+        </a>
+      </li>
+      <li>
+        <a routerLink="/reportes"
+          ><img class="size-icons" src="/img/header/Reportes.png" alt="" />
+          @if (mostrarTexto()) {
+            <span (transitionend)="eliminarTexto($event)">Reportes</span>
+          }
+        </a>
+      </li>
+      <div class="boton" [class.newB]="!expansion()" (click)="alternar()">
+        <img [class.image]="!expansion()" src="/img/header/flecha.png" alt="" />
+      </div>
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,91 @@
+header {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 15vw;
+  min-width: 230px;
+  align-items: center;
+  background-color: rgb(8, 8, 39);
+  transition: 0.3s ease;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 73%;
+  gap: 10%;
+}
+
+.Hretraido {
+  min-width: 50px;
+  transition: 0.3s ease;
+}
+.retraido {
+  display: flex;
+  margin-left: 15%;
+  height: 100%;
+  transition: 0.5s ease;
+}
+.retraido a span {
+  opacity: 0;
+  transition: all 0.5s ease;
+  left: auto;
+}
+
+.retraido a {
+  height: 2rem;
+  width: 2rem;
+}
+nav span {
+  opacity: 100%;
+  transition: all 0.5s ease;
+}
+nav h1 {
+  font-size: 2.3rem;
+  color: white;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  height: 87%;
+  gap: 3rem;
+}
+nav li {
+  display: flex;
+  height: 9%;
+  align-items: center;
+  user-select: none;
+}
+nav a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  align-items: center;
+  gap: 10%;
+}
+
+.size-icons {
+  height: 2rem;
+  width: 2rem;
+  filter: brightness(0) invert(1);
+}
+
+.boton {
+  filter: brightness(0) invert(1);
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+  height: 2rem;
+  width: 2rem;
+}
+.newB {
+  width: 90%;
+}
+.boton img {
+  height: 2rem;
+  width: 2rem;
+}
+.image {
+  transform: scaleX(-1);
+}
